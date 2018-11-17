@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="使用Yeoman搭建项目所需软件  nodejs git  安装Yeoman  Yeoman是一个含有插件系统的开源工具，可以使用最佳实践构建新的项目，搭配Grunt和Bower可以使开发更加高效；   Grunt是一个javascript的任务运行器，可以帮助完成自动构建和测试应用的重复性任务；   Bower是一个依赖管理工具，不用自己手动下载依赖包了，类似于微软的nuget;  使用npm安">
+<meta name="description" content="使用Yeoman搭建项目 所需软件  nodejs git  安装Yeoman  Yeoman是一个含有插件系统的开源工具，可以使用最佳实践构建新的项目，搭配Grunt和Bower可以使开发更加高效；   Grunt是一个javascript的任务运行器，可以帮助完成自动构建和测试应用的重复性任务；   Bower是一个依赖管理工具，不用自己手动下载依赖包了，类似于微软的nuget;  使用npm">
 <meta name="keywords" content="AngularJS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="angularJS高级编程第一章.构建简单的AngularJS应用">
 <meta property="og:url" content="https://oypx1234.github.io/2018/11/10/angularJS高级编程第一章-构建简单的AngularJS应用/index.html">
 <meta property="og:site_name" content="欧阳鹏翔">
-<meta property="og:description" content="使用Yeoman搭建项目所需软件  nodejs git  安装Yeoman  Yeoman是一个含有插件系统的开源工具，可以使用最佳实践构建新的项目，搭配Grunt和Bower可以使开发更加高效；   Grunt是一个javascript的任务运行器，可以帮助完成自动构建和测试应用的重复性任务；   Bower是一个依赖管理工具，不用自己手动下载依赖包了，类似于微软的nuget;  使用npm安">
+<meta property="og:description" content="使用Yeoman搭建项目 所需软件  nodejs git  安装Yeoman  Yeoman是一个含有插件系统的开源工具，可以使用最佳实践构建新的项目，搭配Grunt和Bower可以使开发更加高效；   Grunt是一个javascript的任务运行器，可以帮助完成自动构建和测试应用的重复性任务；   Bower是一个依赖管理工具，不用自己手动下载依赖包了，类似于微软的nuget;  使用npm">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-11-12T01:06:02.756Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angularJS高级编程第一章.构建简单的AngularJS应用">
-<meta name="twitter:description" content="使用Yeoman搭建项目所需软件  nodejs git  安装Yeoman  Yeoman是一个含有插件系统的开源工具，可以使用最佳实践构建新的项目，搭配Grunt和Bower可以使开发更加高效；   Grunt是一个javascript的任务运行器，可以帮助完成自动构建和测试应用的重复性任务；   Bower是一个依赖管理工具，不用自己手动下载依赖包了，类似于微软的nuget;  使用npm安">
+<meta name="twitter:description" content="使用Yeoman搭建项目 所需软件  nodejs git  安装Yeoman  Yeoman是一个含有插件系统的开源工具，可以使用最佳实践构建新的项目，搭配Grunt和Bower可以使开发更加高效；   Grunt是一个javascript的任务运行器，可以帮助完成自动构建和测试应用的重复性任务；   Bower是一个依赖管理工具，不用自己手动下载依赖包了，类似于微软的nuget;  使用npm">
 
 
 
@@ -340,7 +340,8 @@
       
 
       
-        <h4 id="使用Yeoman搭建项目"><a href="#使用Yeoman搭建项目" class="headerlink" title="使用Yeoman搭建项目"></a>使用Yeoman搭建项目</h4><p><em>所需软件</em></p>
+        <h4>使用Yeoman搭建项目</h4>
+<p><em>所需软件</em></p>
 <ul>
 <li>nodejs</li>
 <li>git</li>
@@ -359,25 +360,28 @@
 <ul>
 <li>npm install -g grunt-cli</li>
 <li>npm install -g bower</li>
-<li>npm install -g <a href="mailto:generator-angular@0.9.8" target="_blank" rel="noopener">generator-angular@0.9.8</a></li>
+<li>npm install -g generator-angular@0.9.8</li>
 </ul>
 <blockquote>
-<p>使用npm install时指定-g 标识将保证安装包在机器中全局可用。<br>angularJs生成器的升级 npm install -g generator-angular</p>
+<p>使用npm install时指定-g 标识将保证安装包在机器中全局可用。
+angularJs生成器的升级 npm install -g generator-angular</p>
 </blockquote>
-<h4 id="搭建项目"><a href="#搭建项目" class="headerlink" title="搭建项目"></a>搭建项目</h4><ol>
+<h4>搭建项目</h4>
+<ol>
 <li>创建项目目录</li>
 <li>进入该目录下 执行 yo angular 项目名称</li>
 </ol>
-<h4 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h4><ol>
+<h4>运行项目</h4>
+<ol>
 <li>grunt serve</li>
 <li>若出现 Error: Cannot find where you keep your Bower packages. 问题，则运行bower install</li>
-<li>若使用cmd命令行运行bower install 可能会提示 Bower : ENOGIT git is not installed or not in the PATH，这个时候可以将git加入环境变量path,也可以使用gitbash来代替cmd运行bower install命令就不会出现错误提示了，最后运行 grunt serve 浏览器会自动打开 <a href="http://localhost:9000" target="_blank" rel="noopener">http://localhost:9000</a> ,此时项目已经正常运行成功了。</li>
+<li>若使用cmd命令行运行bower install 可能会提示 Bower : ENOGIT git is not installed or not in the PATH，这个时候可以将git加入环境变量path,也可以使用gitbash来代替cmd运行bower install命令就不会出现错误提示了，最后运行 grunt serve 浏览器会自动打开 http://localhost:9000 ,此时项目已经正常运行成功了。</li>
 </ol>
 <p><em>参考</em></p>
 <ul>
-<li><a href="https://www.cnblogs.com/amoyzhu/p/8796493.html" target="_blank" rel="noopener">用Yeoman构建AngularJS项目</a> </li>
+<li><a href="https://www.cnblogs.com/amoyzhu/p/8796493.html" target="_blank" rel="noopener">用Yeoman构建AngularJS项目</a></li>
 <li><a href="https://stackoverflow.com/questions/31578794/error-cannot-find-where-you-keep-your-bower-packages-use-force-to-continue" target="_blank" rel="noopener">Error: Cannot find where you keep your Bower packages</a></li>
-<li><a href="https://blog.csdn.net/xst686/article/details/46593923/" target="_blank" rel="noopener">https://blog.csdn.net/xst686/article/details/46593923/</a></li>
+<li>https://blog.csdn.net/xst686/article/details/46593923/</li>
 </ul>
 
       
@@ -500,7 +504,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -511,7 +515,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -522,7 +526,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -571,7 +575,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用Yeoman搭建项目"><span class="nav-number">1.</span> <span class="nav-text">使用Yeoman搭建项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#搭建项目"><span class="nav-number">2.</span> <span class="nav-text">搭建项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运行项目"><span class="nav-number">3.</span> <span class="nav-text">运行项目</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">使用Yeoman搭建项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">搭建项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">运行项目</span></a></li></ol></div>
             
 
           </div>

@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="客户select  MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL  品号() select top (10) * from(SELECT  row_number() over(order by MB001) as rownumber,*  FROM INVMB WHERE 1=1  AND MB001 LIKE @num">
+<meta name="description" content="客户 select MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL   品号 () select top (10) * from(SELECT row_number() over(order by MB001) as rownumber,* FROM INVMB WHERE 1=1 AND MB001 LIKE @num">
 <meta name="keywords" content="zettlercn,work">
 <meta property="og:type" content="article">
 <meta property="og:title" content="zettlercn oa table record">
 <meta property="og:url" content="https://oypx1234.github.io/2018/11/05/zettlercn-oa-table-record/index.html">
 <meta property="og:site_name" content="欧阳鹏翔">
-<meta property="og:description" content="客户select  MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL  品号() select top (10) * from(SELECT  row_number() over(order by MB001) as rownumber,*  FROM INVMB WHERE 1=1  AND MB001 LIKE @num">
+<meta property="og:description" content="客户 select MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL   品号 () select top (10) * from(SELECT row_number() over(order by MB001) as rownumber,* FROM INVMB WHERE 1=1 AND MB001 LIKE @num">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-11-05T02:53:40.302Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="zettlercn oa table record">
-<meta name="twitter:description" content="客户select  MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL  品号() select top (10) * from(SELECT  row_number() over(order by MB001) as rownumber,*  FROM INVMB WHERE 1=1  AND MB001 LIKE @num">
+<meta name="twitter:description" content="客户 select MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL   品号 () select top (10) * from(SELECT row_number() over(order by MB001) as rownumber,* FROM INVMB WHERE 1=1 AND MB001 LIKE @num">
 
 
 
@@ -363,34 +363,55 @@
 
       
         <ul>
-<li><p>客户<br><code>select  MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL</code></p>
+<li>
+<p>客户
+<code>select MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL</code></p>
 </li>
-<li><p>品号<br>(<code>)
-select top (10) * from(SELECT  row_number() over(order by MB001) as rownumber,* 
-FROM INVMB WHERE 1=1  AND MB001 LIKE @number  AND MB003 LIKE @specification  )b where rownumber&gt;10
-(</code>)</p>
+<li>
+<p>品号
+(<code>) select top (10) * from(SELECT row_number() over(order by MB001) as rownumber,* FROM INVMB WHERE 1=1 AND MB001 LIKE @number AND MB003 LIKE @specification )b where rownumber&gt;10 (</code>)</p>
 </li>
-<li><p>固定资产<br><code>select * from 固定资产 order by 购买日期 desc,总价 desc</code></p>
+<li>
+<p>固定资产
+<code>select * from 固定资产 order by 购买日期 desc,总价 desc</code></p>
 </li>
 </ul>
 <ul>
-<li><p>工作流实例<br><code>select * from FlowInstance order by CreateDate desc</code></p>
+<li>
+<p>工作流实例
+<code>select * from FlowInstance order by CreateDate desc</code></p>
 </li>
-<li><p>用户<br><code>select * from users  where id=46</code></p>
+<li>
+<p>用户
+<code>select * from users where id=46</code></p>
 </li>
-<li><p>菜单</p>
+<li>
+<p>菜单</p>
+</li>
+</ul>
 <blockquote>
-<p>工程变更通知单-NEW 605<br>工作流模板管理(新) 607<br>录入工程变更通知单-ze-new 608</p>
+<p>工程变更通知单-NEW 605
+工作流模板管理(新) 607
+录入工程变更通知单-ze-new 608</p>
 </blockquote>
-<p>  <code>select * from MenuInfo where 1=1 and NAME like &#39;%录入工程变更通知单%&#39;</code></p>
+<pre><code>`select * from MenuInfo where 1=1 and NAME like '%录入工程变更通知单%'`
+</code></pre>
+<ul>
+<li>
+<p>角色列表
+<code>select * from RoleInfo</code></p>
 </li>
-<li><p>角色列表<br><code>select * from RoleInfo</code></p>
+<li>
+<p>角色关连菜单表
+<code>select * from RoleMenu where 1=1 and mid=420</code></p>
 </li>
-<li><p>角色关连菜单表<br><code>select * from RoleMenu where 1=1 and mid=420</code></p>
+<li>
+<p>用户角色表 1:N
+<code>select * from meun_userrole</code></p>
 </li>
-<li><p>用户角色表 1:N<br><code>select * from meun_userrole</code></p>
-</li>
-<li><p>DZ 角色关连菜单表<br><code>select * from DZ_RoleMenu where 1=1 and MID=420;</code></p>
+<li>
+<p>DZ 角色关连菜单表
+<code>select * from DZ_RoleMenu where 1=1 and MID=420;</code></p>
 </li>
 </ul>
 
@@ -505,7 +526,7 @@ FROM INVMB WHERE 1=1  AND MB001 LIKE @number  AND MB003 LIKE @specification  )b 
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -516,7 +537,7 @@ FROM INVMB WHERE 1=1  AND MB001 LIKE @number  AND MB003 LIKE @specification  )b 
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -527,7 +548,7 @@ FROM INVMB WHERE 1=1  AND MB001 LIKE @number  AND MB003 LIKE @specification  )b 
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
