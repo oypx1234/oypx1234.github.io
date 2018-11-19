@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="初始化一个Git仓库，使用git init命令。  添加文件到Git仓库，分两步：  使用命令git add &amp;lt;file&amp;gt;，注意，可反复多次使用，添加多个文件； 使用命令git commit -m &amp;lt;message&amp;gt;，完成。    要随时掌握工作区的状态，使用git status命令。   如果git status告诉你有文件被修改过，用git diff可以查看修改内容。">
+<meta name="description" content="初始化一个Git仓库，使用git init命令。  添加文件到Git仓库，分两步：    使用命令git add ，注意，可反复多次使用，添加多个文件； 使用命令git commit -m ，完成。   要随时掌握工作区的状态，使用git status命令。 如果git status告诉你有文件被修改过，用git diff可以查看修改内容。 HEAD指向的版本就是当前版本，因此，Git允许我们在">
 <meta name="keywords" content="It,Dog,Alone">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git 笔记">
 <meta property="og:url" content="https://oypx1234.github.io/2018/11/16/git-笔记/index.html">
 <meta property="og:site_name" content="欧阳鹏翔">
-<meta property="og:description" content="初始化一个Git仓库，使用git init命令。  添加文件到Git仓库，分两步：  使用命令git add &amp;lt;file&amp;gt;，注意，可反复多次使用，添加多个文件； 使用命令git commit -m &amp;lt;message&amp;gt;，完成。    要随时掌握工作区的状态，使用git status命令。   如果git status告诉你有文件被修改过，用git diff可以查看修改内容。">
+<meta property="og:description" content="初始化一个Git仓库，使用git init命令。  添加文件到Git仓库，分两步：    使用命令git add ，注意，可反复多次使用，添加多个文件； 使用命令git commit -m ，完成。   要随时掌握工作区的状态，使用git status命令。 如果git status告诉你有文件被修改过，用git diff可以查看修改内容。 HEAD指向的版本就是当前版本，因此，Git允许我们在">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-16T06:43:41.719Z">
+<meta property="og:updated_time" content="2018-11-19T08:27:48.575Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git 笔记">
-<meta name="twitter:description" content="初始化一个Git仓库，使用git init命令。  添加文件到Git仓库，分两步：  使用命令git add &amp;lt;file&amp;gt;，注意，可反复多次使用，添加多个文件； 使用命令git commit -m &amp;lt;message&amp;gt;，完成。    要随时掌握工作区的状态，使用git status命令。   如果git status告诉你有文件被修改过，用git diff可以查看修改内容。">
+<meta name="twitter:description" content="初始化一个Git仓库，使用git init命令。  添加文件到Git仓库，分两步：    使用命令git add ，注意，可反复多次使用，添加多个文件； 使用命令git commit -m ，完成。   要随时掌握工作区的状态，使用git status命令。 如果git status告诉你有文件被修改过，用git diff可以查看修改内容。 HEAD指向的版本就是当前版本，因此，Git允许我们在">
 
 
 
@@ -341,29 +341,20 @@
 
       
         <ul>
-<li>初始化一个Git仓库，使用git init命令。</li>
+<li><p>初始化一个Git仓库，使用git init命令。</p>
+<p> <em>添加文件到Git仓库，分两步：</em></p>
+</li>
 </ul>
-<p><strong>添加文件到Git仓库，分两步：</strong></p>
 <ol>
-<li>使用命令git add &lt;file&gt;，注意，可反复多次使用，添加多个文件；</li>
-<li>使用命令git commit -m &lt;message&gt;，完成。</li>
+<li>使用命令git add <file>，注意，可反复多次使用，添加多个文件；</file></li>
+<li>使用命令git commit -m <message>，完成。</message></li>
 </ol>
 <ul>
-<li>
-<p>要随时掌握工作区的状态，使用git status命令。</p>
-</li>
-<li>
-<p>如果git status告诉你有文件被修改过，用git diff可以查看修改内容。</p>
-</li>
-<li>
-<p>HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。</p>
-</li>
-<li>
-<p>穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。</p>
-</li>
-<li>
-<p>要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。</p>
-</li>
+<li>要随时掌握工作区的状态，使用git status命令。</li>
+<li>如果git status告诉你有文件被修改过，用git diff可以查看修改内容。</li>
+<li>HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset –hard commit_id。</li>
+<li>穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。</li>
+<li>要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。</li>
 </ul>
 
       
@@ -471,7 +462,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -482,7 +473,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -493,7 +484,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
