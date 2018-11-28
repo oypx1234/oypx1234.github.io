@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="未能找到元数据文件  \bin\Release***.dll 软件：VS2017  选择项目所在解决方案右键选择&amp;gt;&amp;gt;批生成 发现要其中有个项目的生成架构不是release的，所以项目一直生成不了release目录文件； 原先Release配置，AnyCPU平台对应的配置选择了x86的架构造成一直生成不了release目录文件； 修改Release解决方案配置为Release/AnyCP">
+<meta name="description" content="未能找到元数据文件  \bin\Release***.dll软件：VS2017  选择项目所在解决方案右键选择&amp;gt;&amp;gt;批生成发现要其中有个项目的生成架构不是release的，所以项目一直生成不了release目录文件；原先Release配置，AnyCPU平台对应的配置选择了x86的架构造成一直生成不了release目录文件；修改Release解决方案配置为Release/AnyCPU 跟其">
 <meta name="keywords" content="debug,vs">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vs发布问题">
 <meta property="og:url" content="https://oypx1234.github.io/2018/11/14/vs发布问题/index.html">
 <meta property="og:site_name" content="欧阳鹏翔">
-<meta property="og:description" content="未能找到元数据文件  \bin\Release***.dll 软件：VS2017  选择项目所在解决方案右键选择&amp;gt;&amp;gt;批生成 发现要其中有个项目的生成架构不是release的，所以项目一直生成不了release目录文件； 原先Release配置，AnyCPU平台对应的配置选择了x86的架构造成一直生成不了release目录文件； 修改Release解决方案配置为Release/AnyCP">
+<meta property="og:description" content="未能找到元数据文件  \bin\Release***.dll软件：VS2017  选择项目所在解决方案右键选择&amp;gt;&amp;gt;批生成发现要其中有个项目的生成架构不是release的，所以项目一直生成不了release目录文件；原先Release配置，AnyCPU平台对应的配置选择了x86的架构造成一直生成不了release目录文件；修改Release解决方案配置为Release/AnyCPU 跟其">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://oypx1234.github.io/uploads/vspb20181114.png">
 <meta property="og:updated_time" content="2018-11-14T06:42:23.233Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vs发布问题">
-<meta name="twitter:description" content="未能找到元数据文件  \bin\Release***.dll 软件：VS2017  选择项目所在解决方案右键选择&amp;gt;&amp;gt;批生成 发现要其中有个项目的生成架构不是release的，所以项目一直生成不了release目录文件； 原先Release配置，AnyCPU平台对应的配置选择了x86的架构造成一直生成不了release目录文件； 修改Release解决方案配置为Release/AnyCP">
+<meta name="twitter:description" content="未能找到元数据文件  \bin\Release***.dll软件：VS2017  选择项目所在解决方案右键选择&amp;gt;&amp;gt;批生成发现要其中有个项目的生成架构不是release的，所以项目一直生成不了release目录文件；原先Release配置，AnyCPU平台对应的配置选择了x86的架构造成一直生成不了release目录文件；修改Release解决方案配置为Release/AnyCPU 跟其">
 <meta name="twitter:image" content="https://oypx1234.github.io/uploads/vspb20181114.png">
 
 
@@ -365,17 +365,12 @@
       
 
       
-        <h4>未能找到元数据文件  \bin\Release***.dll</h4>
-<p><em>软件：VS2017</em></p>
+        <h4 id="未能找到元数据文件-bin-Release-dll"><a href="#未能找到元数据文件-bin-Release-dll" class="headerlink" title="未能找到元数据文件  \bin\Release***.dll"></a>未能找到元数据文件  \bin\Release***.dll</h4><p><em>软件：VS2017</em></p>
 <blockquote>
-<p>选择项目所在解决方案右键选择&gt;&gt;批生成
-发现要其中有个项目的生成架构不是release的，所以项目一直生成不了release目录文件；
-原先Release配置，AnyCPU平台对应的配置选择了x86的架构造成一直生成不了release目录文件；
-修改Release解决方案配置为Release/AnyCPU 跟其他的项目配置一样问题解决了；</p>
+<p>选择项目所在解决方案右键选择&gt;&gt;批生成<br>发现要其中有个项目的生成架构不是release的，所以项目一直生成不了release目录文件；<br>原先Release配置，AnyCPU平台对应的配置选择了x86的架构造成一直生成不了release目录文件；<br>修改Release解决方案配置为Release/AnyCPU 跟其他的项目配置一样问题解决了；</p>
 </blockquote>
 <p><img src="/uploads/vspb20181114.png" alt="批生成"></p>
-<h4>该项目中不存在目标“GatherAllFilesToPublish”</h4>
-<p><em>目标文件:项目文件.csproj</em></p>
+<h4 id="该项目中不存在目标“GatherAllFilesToPublish”"><a href="#该项目中不存在目标“GatherAllFilesToPublish”" class="headerlink" title="该项目中不存在目标“GatherAllFilesToPublish”"></a>该项目中不存在目标“GatherAllFilesToPublish”</h4><p><em>目标文件:项目文件.csproj</em></p>
 <ul>
 <li>卸载项目；</li>
 <li>在文件中添加 <code>&lt;Import Project=&quot;$(MSBuildToolsPath)\Microsoft.CSharp.targets&quot;/&gt;</code> 节点，加入位置应跟<code>&lt;PropertyGroup&gt;</code>同级；</li>
@@ -524,7 +519,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -573,7 +568,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">未能找到元数据文件  \bin\Release***.dll</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">该项目中不存在目标“GatherAllFilesToPublish”</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#未能找到元数据文件-bin-Release-dll"><span class="nav-number">1.</span> <span class="nav-text">未能找到元数据文件  \bin\Release***.dll</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#该项目中不存在目标“GatherAllFilesToPublish”"><span class="nav-number">2.</span> <span class="nav-text">该项目中不存在目标“GatherAllFilesToPublish”</span></a></li></ol></div>
             
 
           </div>

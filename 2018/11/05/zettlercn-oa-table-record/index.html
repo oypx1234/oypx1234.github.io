@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="客户select  MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL  品号() select top (10) * from(SELECT  row_number() over(order by MB001) as rownumber,*  FROM INVMB WHERE 1=1  AND MB001 LIKE @num">
+<meta name="description" content="Welcome to my blog, enter password to read.">
 <meta name="keywords" content="zettlercn,work">
 <meta property="og:type" content="article">
 <meta property="og:title" content="zettlercn oa table record">
 <meta property="og:url" content="https://oypx1234.github.io/2018/11/05/zettlercn-oa-table-record/index.html">
 <meta property="og:site_name" content="欧阳鹏翔">
-<meta property="og:description" content="客户select  MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL  品号() select top (10) * from(SELECT  row_number() over(order by MB001) as rownumber,*  FROM INVMB WHERE 1=1  AND MB001 LIKE @num">
+<meta property="og:description" content="Welcome to my blog, enter password to read.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-11-28T07:27:43.431Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="zettlercn oa table record">
-<meta name="twitter:description" content="客户select  MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL  品号() select top (10) * from(SELECT  row_number() over(order by MB001) as rownumber,*  FROM INVMB WHERE 1=1  AND MB001 LIKE @num">
+<meta name="twitter:description" content="Welcome to my blog, enter password to read.">
 
 
 
@@ -363,38 +363,20 @@
       
 
       
-        <ul>
-<li><p>客户<br><code>select  MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL</code></p>
-</li>
-<li><p>品号<br>(<code>)
-select top (10) * from(SELECT  row_number() over(order by MB001) as rownumber,* 
-FROM INVMB WHERE 1=1  AND MB001 LIKE @number  AND MB003 LIKE @specification  )b where rownumber&gt;10
-(</code>)</p>
-</li>
-<li><p>固定资产<br><code>select * from 固定资产 order by 购买日期 desc,总价 desc</code></p>
-</li>
-</ul>
-<ul>
-<li><p>工作流实例<br><code>select * from FlowInstance order by CreateDate desc</code></p>
-</li>
-<li><p>用户<br><code>select * from users  where id=46</code></p>
-</li>
-<li><p>菜单</p>
-<blockquote>
-<p>工程变更通知单-NEW 605<br>工作流模板管理(新) 607<br>录入工程变更通知单-ze-new 608</p>
-</blockquote>
-<p>  <code>select * from MenuInfo where 1=1 and NAME like &#39;%录入工程变更通知单%&#39;</code></p>
-</li>
-<li><p>角色列表<br><code>select * from RoleInfo</code></p>
-</li>
-<li><p>角色关连菜单表<br><code>select * from RoleMenu where 1=1 and mid=420</code></p>
-</li>
-<li><p>用户角色表 1:N<br><code>select * from meun_userrole</code></p>
-</li>
-<li><p>DZ 角色关连菜单表<br><code>select * from DZ_RoleMenu where 1=1 and MID=420;</code></p>
-</li>
-</ul>
-
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="Welcome to my blog, enter password to read.">
+    <label for="pass">Welcome to my blog, enter password to read.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
     </div>
     
@@ -528,7 +510,7 @@ FROM INVMB WHERE 1=1  AND MB001 LIKE @number  AND MB003 LIKE @specification  )b 
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

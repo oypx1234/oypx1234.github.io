@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="0.import jquery-ui.css jquery.js jquery-ui.js 1.css #progressbar .ui-progressbar-value { 	background-color: #1E9FFF!important; } .ui-progressbar{height:5px;} .progress-label { 	position: absolute; 	le">
+<meta name="description" content="0.importjquery-ui.cssjquery.jsjquery-ui.js 1.css #progressbar .ui-progressbar-value {    background-color: #1E9FFF!important;}.ui-progressbar{height:5px;}.progress-label {    position: absolute;    le">
 <meta name="keywords" content="jquery-ui">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用 JQueryUI progessbar 动态显示进度条">
 <meta property="og:url" content="https://oypx1234.github.io/2018/11/14/使用 JQueryUI progessbar 动态显示进度条/index.html">
 <meta property="og:site_name" content="欧阳鹏翔">
-<meta property="og:description" content="0.import jquery-ui.css jquery.js jquery-ui.js 1.css #progressbar .ui-progressbar-value { 	background-color: #1E9FFF!important; } .ui-progressbar{height:5px;} .progress-label { 	position: absolute; 	le">
+<meta property="og:description" content="0.importjquery-ui.cssjquery.jsjquery-ui.js 1.css #progressbar .ui-progressbar-value {    background-color: #1E9FFF!important;}.ui-progressbar{height:5px;}.progress-label {    position: absolute;    le">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-11-14T06:37:48.094Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 JQueryUI progessbar 动态显示进度条">
-<meta name="twitter:description" content="0.import jquery-ui.css jquery.js jquery-ui.js 1.css #progressbar .ui-progressbar-value { 	background-color: #1E9FFF!important; } .ui-progressbar{height:5px;} .progress-label { 	position: absolute; 	le">
+<meta name="twitter:description" content="0.importjquery-ui.cssjquery.jsjquery-ui.js 1.css #progressbar .ui-progressbar-value {    background-color: #1E9FFF!important;}.ui-progressbar{height:5px;}.progress-label {    position: absolute;    le">
 
 
 
@@ -363,46 +363,29 @@
       
 
       
-        <p>0.import
-jquery-ui.css
-jquery.js
-jquery-ui.js</p>
-<p>1.css
-#progressbar .ui-progressbar-value {
-	background-color: #1E9FFF!important;
-}
-.ui-progressbar{height:5px;}
-.progress-label {
-	position: absolute;
-	left: 50%;
-	top: -3px;
-	font-weight: bold;
-	text-shadow: 1px 1px 0 #fff;
-}</p>
-<p>2.html
-&lt;div id=&quot;progressbar&quot;&gt;&lt;div class=&quot;progress-label&quot;&gt;&lt;/div&gt;&lt;/div&gt;</p>
-<p>3.script
-$(function () {
-$(&quot;#progressbar&quot;).progressbar({
-value: false
-});</p>
+        <p>0.import<br>jquery-ui.css<br>jquery.js<br>jquery-ui.js</p>
+<p>1.css</p>
+<p>#progressbar .ui-progressbar-value {<br>    background-color: #1E9FFF!important;<br>}<br>.ui-progressbar{height:5px;}<br>.progress-label {<br>    position: absolute;<br>    left: 50%;<br>    top: -3px;<br>    font-weight: bold;<br>    text-shadow: 1px 1px 0 #fff;<br>}</p>
+<p>2.html</p>
+<div id="progressbar"><div class="progress-label"></div></div>
+
+<p>3.script<br>$(function () {<br>    $(“#progressbar”).progressbar({<br>        value: false<br>    });</p>
 <pre><code>var currentState = (tagcount / (nodes.length - hqcount)) * 100;
 var progressbar = $(&quot;#progressbar&quot;),
-	progressbarValue = progressbar.find(&quot;.ui-progressbar-value&quot;),
-	progressLabel = $(&quot;.progress-label&quot;);
+    progressbarValue = progressbar.find(&quot;.ui-progressbar-value&quot;),
+    progressLabel = $(&quot;.progress-label&quot;);
 
 function progress() {
-	var val = progressbar.progressbar(&quot;value&quot;) || 0;
-	progressbar.progressbar(&quot;value&quot;, val + 1);//step
-	progressLabel.text(progressbar.progressbar(&quot;value&quot;) + &quot;%&quot;);//show step text
+    var val = progressbar.progressbar(&quot;value&quot;) || 0;
+    progressbar.progressbar(&quot;value&quot;, val + 1);//step
+    progressLabel.text(progressbar.progressbar(&quot;value&quot;) + &quot;%&quot;);//show step text
 
-	if (val &lt; currentState-1) {
-		setTimeout(progress, 30);//前进速度
-	}
+    if (val &lt; currentState-1) {
+        setTimeout(progress, 30);//前进速度
+    }
 }
 setTimeout(progress, 500);
-</code></pre>
-<p>});</p>
+</code></pre><p>});</p>
 
       
     </div>
@@ -537,7 +520,7 @@ setTimeout(progress, 500);
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
